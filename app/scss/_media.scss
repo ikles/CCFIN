@@ -1,0 +1,375 @@
+@media only screen and (min-width : 1921px) {
+  .banner-title {
+    font-size: 64px;
+  }
+  .adrow-w, .mnurow-cart-col,
+  .top-mnu a {
+    font-size: 25px;
+  }
+  .mnurow-form {
+    margin-left: 64px;
+  }
+  .mnurow-btn {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width : 1800px) {
+  .contain {
+    max-width: 1170px;
+  }
+  .logo2 {
+    margin-right: unset;
+  }
+  .mnurow-form,
+  .mnurow-cart-col {
+    margin-left: unset;
+  }
+  input[type="text"].mnurow-input {
+    width: auto;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+  }
+  .top-mnu {
+    margin: 0 -15px;
+    li {
+      margin: 0 15px;
+    }
+    a {
+      font-size: 19px;
+    }
+  } 
+  .adrow-w,
+  .mnurow-cart-col {
+    font-size: 17px;
+  }
+  .mnurow-w {    
+    justify-content: space-between;
+  }
+  .banner-title {
+    font-size: 43px;
+  }
+}
+@media only screen and (max-width : 1199px) {
+  .contain {
+    max-width: 970px
+  }
+
+
+
+  .top-mnu {
+    display: none;
+    position: absolute;    
+    top: 0;
+    left: 0;
+    min-height: 100px;
+    z-index: 12;
+    background-color: #FFF; 
+    width: 100%;
+    padding: 40px 45px 40px 15px;  
+    padding-left: calc((100% - 970px)/2);
+    margin-left: 0;
+    margin-right: 0;  
+    z-index: 100;    
+    li {
+      margin-bottom: 9px;
+      margin-left: 0;
+      margin-right: 0; 
+    }
+    a {
+      font-size: 20px;
+    }
+    
+    .mega-mnu-title {
+      color: #111;
+    }
+    .mega-mnu-ul a {
+      color: #999;
+      font-weight: 400;
+      &:hover {
+        color: #92ba1f;
+      }
+    }
+    .mega-mnu-butt {
+      color: #111111;
+      &:hover {
+        color: #FFF;
+      }
+    }
+    .mega-mnu-ul-big a {
+      color: #111;
+    }
+  }
+  .hidden-mnu {
+    display: block;      
+    position: relative;
+    z-index: 11;
+  }
+  .toggle-mnu {
+    display: block;
+    float: right;
+    right: 0;
+    top: 0;
+    text-align: center;
+    line-height: 48px;
+    display: block;
+    width: 16px;
+    height: 9px;
+    margin: 0;    
+  }
+  .toggle-mnu:focus {
+    outline: none;
+  }
+  .toggle-mnu span {
+    position: relative;
+    display: block;  
+    transition: all 0.3s;    
+    backface-visibility: hidden;
+    width: 16px;
+    height: 3px;   
+    background: #000 
+    
+  }
+  .toggle-mnu span {
+    &:after, &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -4px;
+      width: 16px;
+      height: 3px;   
+      background: #000;
+      transition: all 0.3s;    
+      backface-visibility: hidden;             
+      border-radius: 1px;
+    }
+  }
+  .toggle-mnu span:after {
+    top: 3px;     
+  }
+  .toggle-mnu span:before {
+
+  }
+
+  .toggle-mnu {      
+    span {
+      background-color: transparent;
+    }
+  }
+
+  .top-close {
+    display: block;
+    position: absolute;  
+    top: 40px;
+    right: 45px;
+    width: 40px;
+    height: 40px;
+    background: url("../img/close.svg") $nr top right;  
+    background-size: 15px;
+  }
+
+
+
+
+  .toggle-mnu.on span:before    {
+    transform: rotate(45deg) translate(5px, 5px);
+    top: -6px;
+  }
+  .toggle-mnu.on span:after    {
+    transform: rotate(-45deg) translate(8px, -9px);
+    top: 13px;
+  }
+  .toggle-mnu.on + #menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  .col-mnu {
+    order: 100;
+    margin-left: 25px;
+  }
+  .mnurow-w {            
+    justify-content: flex-end;
+
+  }
+  .logo2 {
+    margin-right: auto;
+  }
+  .mnurow-cart-col {
+    margin-left: 40px;
+  }
+  .banner-title {
+    font-size: 34px;
+  }
+  .banner-l {
+    padding-top: 0;
+  }
+  .banner {    
+    align-items: center;
+    margin-top: 50px;
+  }
+  .banner-link {
+    font-size: 19px;
+  }
+  .cats-img-w {
+    height: 200px;
+    margin-bottom: 10px;
+  }
+  .cats-title {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .cats-item {
+    width: 225px;
+  }
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+  .contain {
+    max-width: 750px 
+  }    
+  .banner-title {
+    font-size: 27px;
+  }
+  .banner-link,
+  .adrow-w, .mnurow-cart-col {
+    font-size: 16px;
+  }
+  .top-mnu {
+   padding-left: calc((100% - 750px)/2); 
+ }  
+} 
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+  .contain {
+    max-width: 600px;
+  }
+  .top-mnu {
+   padding-left: calc((100% - 600px)/2); 
+ }  
+ .banner-l {
+  padding-right: 20px;
+}
+}      
+
+@media only screen and (max-width : 640px) {
+  .contain {
+    max-width: 530px;
+  }
+  .top-mnu {
+   padding-left: calc((100% - 530px)/2); 
+ }  
+ .mnurow-search-col {
+   display: none;
+ }
+ .top {
+   padding: 30px 0;
+ }
+ .banner-title {
+   font-size: 24px;
+ }
+} 
+
+
+
+@media only screen and (max-width : 570px) {
+  .contain {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .top-close {
+top: 15px;
+right: 15px;
+  }   
+  .top-mnu {   
+   padding: 15px;
+ }  
+ .adrow-w {   
+   justify-content: space-between;
+ }
+ .banner-link, .adrow-w, .mnurow-cart-col {
+   font-size: 14px;
+ }
+ .adrow-tel-time {
+   text-align: right;
+ }
+ .cats-img-w {
+   height: 160px;
+   margin-bottom: 3px;
+ }
+ .cats-item {
+   width: 180px;
+ }
+ .cats-col {
+   margin: 0 8px;
+ }
+ .cats-title {
+   font-size: 16px;
+ }
+}
+
+@media only screen and (max-width : 480px) {
+  .banner {    
+    flex-wrap: wrap;
+  }
+  .banner-r {
+    padding: 15px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .banner-l {
+    margin-bottom: 15px;
+  }
+  .banner-l,
+  .banner-r {
+    width: 100%;
+  }
+  .banner-title {
+    margin-bottom: 5px;
+  }
+  .cats {
+    margin-top: 35px;
+  }
+  .adrow-w {    
+    flex-wrap: wrap;
+    > * {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    } 
+  }
+  .adrow-tel-time {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width : 375px) {
+
+}
+
+@media only screen and (max-width : 320px) {
+  body, body > * {
+    width: auto;
+    min-width: 360px;
+  }
+}
+
+
+@media only screen and (min-width : 1200px) {
+  .top-mnu {
+    display: flex;
+  } 
+
+  .hidden-mnu {
+    display: none;
+  }
+} 
+
+

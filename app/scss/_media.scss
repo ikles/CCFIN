@@ -298,6 +298,16 @@
   .coworkers__col {
     width: 50%;
   }
+  .awards__row {
+    margin: 0 -30px;
+  }
+  .awards__item {
+    padding: 0 30px;
+  }
+  .awards__item img {
+    max-height: 150px;
+    width: auto;
+  }
 }
 
 
@@ -455,6 +465,19 @@ input[type="text"].form__input {
 .coworkers__subtitle {
   font-size: 20px;
 }
+.awards__item img {
+    max-height: 100px;
+    width: auto;
+  }
+  .awards__row {
+    margin: 0 -10px;
+  }
+  .awards__item {
+    padding: 0 10px;
+  }
+  .awards {
+    padding: 50px 0;
+  }
 }      
 
 @media only screen and (max-width : 640px) {
@@ -680,6 +703,12 @@ h4 {
   margin-bottom: 27px;
   font-size: 23px;
 } 
+.form__title {
+  font-size: 23px;
+}
+.form__button {
+  font-size: 19px;
+}
 .coworkers {
   padding-top: 47px;
 }

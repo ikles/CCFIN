@@ -749,6 +749,27 @@ h4 {
   margin-bottom: 57px;
 }
 
+.awards {
+  padding: 92px 0 107px 0;
+}
+.awards__contain {
+  max-width: 1485px;          
+}
+.awards__row {
+  display: flex;  
+  flex-wrap: wrap;
+  margin: 0 -63px;  
+  align-items: center;          
+}
+.awards__item {
+  padding: 0 63px;
+  width: 25%;
+  text-align: center;
+  img {
+    max-width: 100%;
+  }
+}
+
 @import "_media.scss";
 @import "_hides.scss";
 @import "_after-styless";

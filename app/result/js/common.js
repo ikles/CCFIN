@@ -127,16 +127,28 @@ if ($('.popprods-w').length) {
     autoplay: false,
     autoplaySpeed: 4000,
     cssEase: 'ease-out',
-    arrows: false,
+    arrows: true,
     dots: false,
     
     responsive: [
     {
-      breakpoint: 1200,
+      breakpoint: 1801,
       settings: {
-        slidesToShow: 4
+        slidesToShow: 3
       }
-    }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+     {
+      breakpoint: 481,
+      settings: {
+        slidesToShow: 1
+      }
+    },
     ]
  });
 }

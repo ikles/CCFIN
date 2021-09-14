@@ -244,7 +244,7 @@ input[type="text"].mnurow-input {
 }
 
 .left-contain-padding {
-padding-left: calc((100% - 1717px)/2);  
+  padding-left: calc((100% - 1717px)/2);  
 }
 
 
@@ -556,12 +556,11 @@ h3 {
 .form__label {
   display: block;
   margin-top: 28px;
-  display: flex;    
-  align-items: flex-start;  
+  display: flex;      
+  align-items: center;  
   justify-content: center;
   input[type="checkbox"] {
-    display: none;    
-    
+    display: none;        
     + span {
       flex: none;
       content: "";
@@ -621,14 +620,19 @@ h3 {
   margin-top: 48px;
 }
 
-input[type="text"].form__input {
+input[type="text"].input {
   border: none;
   padding: 3px;
-  width: 366px;
   font-size: 24px;
   color: #000;
   border-bottom: 1px solid #878787;
 }
+
+input[type="text"].form__input {  
+  width: 366px;  
+}
+
+
 
 .form__button {
   font-size: 24px;
@@ -852,7 +856,7 @@ p {
 .about__text {
   padding-top: 80px;
   padding-right: 244px;  
-          flex-grow: 1;
+  flex-grow: 1;
 }
 .about__image {
   width: calc(30% - 30px);
@@ -876,6 +880,185 @@ p {
   line-height: 1.2;
   margin-top: -89px;
 }
+
+.contsmap {  
+  margin: 55px 0 60px 0; 
+  display: flex;
+}
+.contsmap__content {  
+  flex-grow: 1;
+  padding-right: 15px;
+  p {
+    margin-bottom: 15px;
+  }
+  a {
+    color: #000;
+  }
+}
+.contsmap__item {
+  margin-bottom: 30px;
+}
+.left-contain-padding {}
+.contsmap__map {
+  width: 65%;
+  flex: none;
+  height: 515px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.route {
+  padding: 56px 0 71px 0;
+  background-color: #f6f6f6;
+}
+.contain {}
+.route__row {
+  display: flex;
+  
+}
+.route__col-left {  
+  flex-grow: 1;
+  padding-right: 15px;
+}
+.route__col-rigth {
+  width: 65%;
+  flex: none;
+}
+
+.threeblocks {
+  margin: 47px 0 87px 0;
+}
+.threeblocks__row {}
+.threeblocks__col {}
+.threeblocks__item {
+  background-color: #f6f6f6;
+  height: 326px;
+}
+
+.label-text {
+  display: block;
+  span {
+    font-size: 24px;
+    margin-bottom: 3px;
+    display: block;
+    font-weight: 400;
+    color: #808080;
+  }
+}
+
+.contsfeed {}
+.contsfeed__row {
+  display: flex;
+}
+.contsfeed__conts {  
+
+  width: 587px;
+  flex: none;
+}
+
+
+.contsfeed__feedback {}
+.feedback {
+  max-width: 838px;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 68px 86px 55px 86px;
+}
+.feedback__title {
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 26px;
+}
+.feedback__subject {
+  font-size: 24px;
+font-weight: 300;
+color: #000000;
+}
+.feedback__form {}
+.feedback__step-1 {}
+.feedback__radio-labels {
+  display: flex;  
+          flex-wrap: wrap;
+          margin-top: 32px;
+}
+.feedback__radio-label {
+  width: 50%;
+  display: flex;  
+  align-items: center;
+  margin-bottom: 23px;  
+  input[type="radio"] {
+    display: none;
+    + span {
+      flex: none;
+      content: "";
+      display: inline-block;
+      position: relative;
+      width: 35px;
+      height: 35px;
+      background-color: #FFF;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      margin-right: 13px;      
+    }      
+    
+    &:checked {
+      + span {
+        &:after {
+          flex: none;
+          content: ""; 
+          display: block;
+          width: 16px;
+          height: 16px;
+          background-color: #555;         
+          border-radius: 50%;
+          position: absolute;
+          top: calc(50% - 8px);
+          left: 9px;
+          z-index: 10;
+        }
+      }
+    }
+  }
+}
+.feedback__radio {}
+.feedback__label-text {
+  margin-bottom: 55px;
+}
+.feedback__step-2 {}
+.feedback__row {}
+.feedback__col {}
+input[type="text"].feedback__input {
+  margin-bottom: 30px;
+}
+
+.label-textarea {
+  margin-top: 19px;
+}
+
+.textarea {
+  height: 110px;
+  border: none;
+  border-top: 1px solid #878787;
+  border-bottom: 1px solid #878787;
+  background-color: #f6f6f6;
+  width: 100%;
+  font-size: 24px;
+  line-height: 1;
+  color: #000;
+  padding: 3px;
+}
+
+.feedback__next {
+  display: inline-block;
+  margin-top: 43px;
+}
+
+
+
 
 
 @import "_media.scss";

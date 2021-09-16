@@ -5,7 +5,7 @@
   <!--meta name="viewport" content="width=1200px"-->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>2</title>    
+  <title>3</title>    
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&display=swap" rel="stylesheet">
@@ -35,7 +35,7 @@
       <div class="mnurow">
         <div class="contain">
           <div class="mnurow-w">
-            <a href="#" class="logo2"><img src="img/logo_157.jpg" class="logo2-img" /></a>
+            <a href="index.html" class="logo2"><img src="img/logo_157.jpg" class="logo2-img" /></a>
             <div class="col-mnu">
               <div class="hidden-mnu" wfd-invisible="true">
                 <a href="#" class="toggle-mnu" wfd-invisible="true"><span></span></a>
@@ -104,22 +104,47 @@
     </div>
   </div><!--route-->
   <div class="threeblocks">
-    <div class="threeblocks__row row25">
-      <div class="threeblocks__col col-33"><div class="threeblocks__item"></div></div>
-      <div class="threeblocks__col col-33"><div class="threeblocks__item"></div></div>
-      <div class="threeblocks__col col-33"><div class="threeblocks__item"></div></div>
-    </div>  
+    <div class="contain">
+      <div class="threeblocks__row row25">
+        <div class="threeblocks__col col-33"><div class="threeblocks__item"></div></div>
+        <div class="threeblocks__col col-33"><div class="threeblocks__item"></div></div>
+        <div class="threeblocks__col col-33"><div class="threeblocks__item"></div></div>
+      </div>  
+    </div>
   </div><!--threeblocks-->
   <div class="contsfeed">
     <div class="contain">
       <div class="contsfeed__row">
-        <div class="contsfeed__conts"></div>
+        <div class="contsfeed__conts">
+          <div class="contsfeed__conts-title">Режим работы</div>
+          <table class="contsfeed__conts-table">
+            <tr>
+              <td><b>Пн-Пт</b></td>
+              <td>11:00 — 19.00</td>
+            </tr>
+            <tr>
+              <td><b>Сб</b></td>
+              <td>11:00 — 19.00</td>
+            </tr>
+            <tr>
+              <td><b>Вс</b></td>
+              <td>Выходной</td>
+            </tr>
+          </table>
+          <div class="contsfeed__socials">
+            <a href="#" class="contsfeed__social"><img src="img/inst_2.png" alt=""></a>          
+            <a href="#" class="contsfeed__social"><img src="img/fb_2.png" alt=""></a>          
+            <a href="#" class="contsfeed__social"><img src="img/viber_2.png" alt=""></a>          
+            <a href="#" class="contsfeed__social"><img src="img/phone_2.png" alt=""></a>          
+          </div>
+          <a href="#" class="link contsfeed__link">Реквизиты организации</a>
+        </div>
         <div class="contsfeed__feedback feedback">
-          <div class="feedback__title">Обратная связь</div>
-          <div class="feedback__subject">Выберете тему обращения</div>
+          <div class="feedback__title">Обратная связь</div>          
           <form class="feedback__form">
 
             <div class=" feedback__radio-labels feedback__step-1">
+              <div class="feedback__subject">Выберете тему обращения</div>
               <label class=" feedback__radio-label">
                 <input type="radio" class="feedback__radio">
                 <span></span>
@@ -144,14 +169,36 @@
             <div class="feedback__step-2">
               <div class="feedback__row row10">
                 <div class="feedback__col col-50"><input type="text" class="feedback__input input" placeholder="Ваше имя"></div>
-                <div class="feedback__col col-50"><input type="text" class="feedback__input input" placeholder="E-mail"></div>
-                <div class="feedback__col col-50"><input type="text" class="feedback__input input" placeholder="Телефон"></div>
+                <div class="feedback__col col-50"><input type="text" class="feedback__input input" placeholder="E-mail" required></div>
+                <div class="feedback__col col-50"><input type="text" class="feedback__input input" placeholder="Телефон" required></div>
                 <div class="feedback__col col-50"><input type="text" class="feedback__input input" placeholder="Номер заказа"></div>                
               </div>
               <label class="label-textarea">
                 <span>Сообщение</span>
                 <textarea class="textarea"></textarea>                
               </label>
+
+
+
+              <div class="addform_file-w">
+                <div class="addform_file-label-w">
+                  <label class="addform_file-label">
+                    <input size="40" accept=".html,.html,.pdf,.docx,.doc,.xls,.xlsx,.txt,.jpg,.jpeg,.png" class="multi-file-input" type="file" id="fileMulti-2" aria-invalid="false">
+                    <span>прикрепить файл</span>
+                  </label>
+                  <div class="img_wrapper_2 add-comp-col-1-l-photo-w">
+                  </div>
+                </div>
+                <div class="addform_file-desc">*общий объем мфайлов не более 5 Мб</div>
+              </div><!--addform_file-w-->
+
+              <label class="form__label feedback-form__label">
+                <input type="checkbox">
+                <span></span>
+                <div>нажимая «отправить», я даю свое согласие на обработку <a href="#">персональных данных</a></div>
+              </label>
+              <button type="submit" class="feedback-form__btn link">отправить</button>
+
               
             </div><!--feedback__step-2-->
             <a href="#" class="feedback__next link">далее</a>

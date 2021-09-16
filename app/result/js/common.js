@@ -21,6 +21,40 @@ jQuery(document).ready(function( $ ) {
   });
 
 
+
+
+let imgWrapper2 = document.querySelector('.addform_file-label span');  
+let fileMulti2 = document.querySelector('#fileMulti-2');
+
+
+function download2(input) {
+  let file = input.files[0];
+  let reader = new FileReader();
+  reader.readAsDataURL(file);
+  reader.onload = function () {
+    //let img = document.createElement('img');
+    imgWrapper2.innerHTML = file.name
+  }
+}
+
+
+if($('#fileMulti-2').length) {
+  fileMulti2.addEventListener("change", function() {
+   download2(this); 
+ });
+}
+
+
+
+$('.feedback__next').click(function (e) {
+  e.preventDefault()
+  $(this).hide();
+  $('.feedback__step-1').hide();
+  $('.feedback__step-2').slideDown();
+});
+
+
+
   //$('.wrapper').prepend('<span class="eye-3"></span>');
 
 
@@ -170,11 +204,11 @@ if ($('.popprods-w').length) {
 
 
 
-  $('.link').click(function(e) {
+/*  $('.link').click(function(e) {
     $('.modal-overlay_1').fadeIn();
     e.preventDefault();
     $('body').addClass('ohi');
-  });
+  });*/
 
 
   $('.pop-close, .modal-overlay').click(function(e) {

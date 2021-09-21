@@ -405,6 +405,27 @@
     margin-top: 34px;
     padding-bottom: 60px;
   }
+  .revs-row {    
+            
+            .revs-col {
+    width: 100%;
+  }
+  } 
+  .revs-it {
+    margin-bottom: 30px;
+  }
+  .revs-stars {
+    margin: 15px 0 10px 0;
+  }
+  .revs-txt {
+    font-size: 17px;
+  }
+  .revs-it {
+    padding: 20px 30px;
+  }
+  .revs {
+    padding: 50px 0;
+  }
 }
 
 
@@ -920,6 +941,12 @@ input[type="text"].form__input {
 }
 .back-link {
   width: 100%;
+}
+.revs-tit {
+  margin-bottom: 30px;
+}
+.revs-txt {
+  font-size: 16px;
 }
 }
 

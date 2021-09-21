@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('var/_head.html',{
+  "title":"Категория товаров"
+})
+<body>
+  <div class="wrapper">
+    @@include('var/_header2.html')
+
+    <div class="cat-page">
+
+      <div class="contain">
+        <div class="bread-w">
+          <ul class="bread">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>            
+            <li><span>Стулья</span></li>
+          </ul>
+        </div><!--br-w-->
+      </div>
+
+
+
+
+
+      <div class="cat-links-row">
+        <div class="contain">
+          <div class="cat-links-w">
+            <ul class="cat-links-ul">
+              <li><a href="#">Столы</a></li>
+              <li><a class="active" href="#">Стулья</a></li>
+              <li><a href="#">Кресла</a></li>
+              <li><a href="#">Диваны</a></li>
+              <li><a href="#">Кровати</a></li>
+              <li><a href="#">Пуфы</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="cat-links-row-2">
+        <div class="contain">
+          <div class="cat-links-w-2">
+            <ul class="cat-links-ul-2">
+              <li><a class="active" href="#">Обеденные</a></li>
+              <li><a href="#">Полубарные/Барные</a></li>
+              <li><a href="#">Офисные</a></li>
+              <li><a href="#">Табуреты</a></li>
+              <li><a href="#">Скамьи</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="filter-open-row">
+        <div class="contain">
+          <a href="#" class="filter-open">Фильтр</a>
+        </div>
+      </div>
+      <div class="filter">
+        <div class="contain">
+          <form class="catfilter-form">
+            <div class="catfilter-row row10">
+              <div class="catfilter-col col-16">
+                <div class="catfilter-tit">Показывыать по</div>
+                <div class="catfilter-item">
+                  <label class="catfilter-label">
+                    <input class="catfilter-radio" type="radio" name="count">
+                    <span class="catfilter-span"></span>
+                    <div class="catfilter-txt">20 товаров</div>
+                  </label>
+                  <label class="catfilter-label">
+                    <input class="catfilter-radio" type="radio" name="count">
+                    <span class="catfilter-span"></span>
+                    <div class="catfilter-txt">40 товаров</div>
+                  </label>
+                  <label class="catfilter-label">
+                    <input class="catfilter-radio" type="radio" name="count">
+                    <span class="catfilter-span"></span>
+                    <div class="catfilter-txt">60 товаров</div>
+                  </label>
+                </div>
+              </div><!--col-->
+              <div class="catfilter-col col-16">
+                <div class="catfilter-tit">Цена</div>
+                <div class="catfilter-item">
+                  <label class="catfilter-label">
+                    <input class="catfilter-radio" type="radio" name="price">
+                    <span class="catfilter-span"></span>
+                    <div class="catfilter-txt">Цена по возрастанию</div>
+                  </label>
+                  <label class="catfilter-label">
+                    <input class="catfilter-radio" type="radio" name="price">
+                    <span class="catfilter-span"></span>
+                    <div class="catfilter-txt">Цена по убыванию</div>
+                  </label>  
+                </div>
+              </div><!--col-->
+
+              <div class="catfilter-col col-16">
+                <div class="catfilter-tit">Диапазон</div>
+                <div class="catfilter-item">
+                  <img class="polz" src="img/polz.png" alt="">
+
+                  <label class="catfilter-label-input">
+                    <span class="catfilter-input-text">От</span>
+                    <input class="catfilter-input" type="text" value="7560">
+                  </label> 
+                  <label class="catfilter-label-input">
+                    <span class="catfilter-input-text">До</span>
+                    <input class="catfilter-input" type="text" value="173900">
+                  </label> 
+                </div>
+              </div><!--col-->
+
+              <div class="catfilter-col col-16">
+                <div class="catfilter-tit">Подлокотники</div>
+                <div class="catfilter-item catfilter-item-50">
+                  <label class="catfilter-label">
+                    <input class="catfilter-radio" type="radio" name="podl">
+                    <span class="catfilter-span"></span>
+                    <div class="catfilter-txt">Да</div>
+                  </label>
+                  <label class="catfilter-label">
+                    <input class="catfilter-radio" type="radio" name="podl">
+                    <span class="catfilter-span"></span>
+                    <div class="catfilter-txt">Нет</div>
+                  </label>  
+                </div>
+                <div class="catfilter-tit">Обивка</div>
+                <div class="catfilter-item catfilter-item-50">
+                  <label class="catfilter-label">
+                    <input class="catfilter-radio" type="radio" name="obi">
+                    <span class="catfilter-span"></span>
+                    <div class="catfilter-txt">Да</div>
+                  </label>
+                  <label class="catfilter-label">
+                    <input class="catfilter-radio" type="radio" name="obi">
+                    <span class="catfilter-span"></span>
+                    <div class="catfilter-txt">Нет</div>
+                  </label>  
+                </div>
+              </div><!--col-->
+
+              <div class="catfilter-col col-16">
+                <div class="catfilter-tit">Материал</div>
+                <div class="catfilter-item">
+                  <label class="catfilter-label">
+                    <input class="catfilter-radio" type="checkbox" name="mat">
+                    <span class="catfilter-span"></span>
+                    <div class="catfilter-txt">Дерево</div>
+                  </label>
+                  <label class="catfilter-label">
+                    <input class="catfilter-radio" type="checkbox" name="mat">
+                    <span class="catfilter-span"></span>
+                    <div class="catfilter-txt">Пластик</div>
+                  </label>
+                  <label class="catfilter-label">
+                    <input class="catfilter-radio" type="checkbox" name="mat">
+                    <span class="catfilter-span"></span>
+                    <div class="catfilter-txt">Металл</div>
+                  </label>                
+                </div>
+              </div><!--col-->
+
+              <div class="catfilter-col col-16">
+                <div class="catfilter-tit">Штабилируемые</div>
+                <div class="catfilter-item catfilter-item-50">
+                  <label class="catfilter-label">
+                    <input class="catfilter-radio" type="radio" name="shtab">
+                    <span class="catfilter-span"></span>
+                    <div class="catfilter-txt">Да</div>
+                  </label>
+                  <label class="catfilter-label">
+                    <input class="catfilter-radio" type="radio" name="shtab">
+                    <span class="catfilter-span"></span>
+                    <div class="catfilter-txt">Нет</div>
+                  </label>  
+                </div>
+                <div class="catfilter-tit">Уличное использование</div>
+                <div class="catfilter-item catfilter-item-50">
+                  <label class="catfilter-label">
+                    <input class="catfilter-radio" type="radio" name="str">
+                    <span class="catfilter-span"></span>
+                    <div class="catfilter-txt">Да</div>
+                  </label>
+                  <label class="catfilter-label">
+                    <input class="catfilter-radio" type="radio" name="str">
+                    <span class="catfilter-span"></span>
+                    <div class="catfilter-txt">Нет</div>
+                  </label>  
+                </div>
+              </div><!--col-->
+
+
+            </div><!--catfilter-row-->
+          </form>
+        </div><!--contain-->
+      </div><!--filter-->
+
+
+      
+
+    </div><!--cat-page-->
+
+
+    @@include('var/_footer.html')
+    <!----------------------------------->
+    <div class="overlay"></div>
+  </div>
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>      
+  <script src="js/slick.js"></script>
+  <script src="js/common.js"></script>
+</body>
+</html>
+

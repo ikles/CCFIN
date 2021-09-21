@@ -20,18 +20,30 @@ jQuery(document).ready(function( $ ) {
     e.stopPropagation();
   });
 
+  $('.filter-open').click(function (e) {
+    e.preventDefault();
+    const self = $(this)
+    $(this).toggleClass('open');
+    if ( self.hasClass('open') ) {
+      $('.filter').slideDown();
+    }
+    else {
+     $('.filter').slideUp(); 
+    }    
+  })
 
 
 
-let imgWrapper2 = document.querySelector('.addform_file-label span');  
-let fileMulti2 = document.querySelector('#fileMulti-2');
+
+  let imgWrapper2 = document.querySelector('.addform_file-label span');  
+  let fileMulti2 = document.querySelector('#fileMulti-2');
 
 
-function download2(input) {
-  let file = input.files[0];
-  let reader = new FileReader();
-  reader.readAsDataURL(file);
-  reader.onload = function () {
+  function download2(input) {
+    let file = input.files[0];
+    let reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = function () {
     //let img = document.createElement('img');
     imgWrapper2.innerHTML = file.name
   }
@@ -123,49 +135,49 @@ $('.accordion-header').toggleClass('inactive-header');
 
   });
 
- 
 
 
 
-if ($('.cats').length) {
 
-  $('.cats').slick({  
-   infinite: true,    
-    slidesToShow: 4,
-    speed: 200,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 4000,
-    cssEase: 'ease-out',
-    arrows: false,
-    dots: false,
-    variableWidth: true,
-    responsive: [
-    {
+  if ($('.cats').length) {
+
+    $('.cats').slick({  
+     infinite: true,    
+     slidesToShow: 4,
+     speed: 200,
+     slidesToScroll: 1,
+     autoplay: false,
+     autoplaySpeed: 4000,
+     cssEase: 'ease-out',
+     arrows: false,
+     dots: false,
+     variableWidth: true,
+     responsive: [
+     {
       breakpoint: 1200,
       settings: {
         slidesToShow: 4
       }
     }
     ]
- });
-}
+  });
+  }
 
-if ($('.popprods-w').length) {
+  if ($('.popprods-w').length) {
 
-  $('.popprods-w').slick({  
-   infinite: true,    
-    slidesToShow: 4,
-    speed: 200,
-    slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 4000,
-    cssEase: 'ease-out',
-    arrows: true,
-    dots: false,
-    
-    responsive: [
-    {
+    $('.popprods-w').slick({  
+     infinite: true,    
+     slidesToShow: 4,
+     speed: 200,
+     slidesToScroll: 1,
+     autoplay: false,
+     autoplaySpeed: 4000,
+     cssEase: 'ease-out',
+     arrows: true,
+     dots: false,
+
+     responsive: [
+     {
       breakpoint: 1801,
       settings: {
         slidesToShow: 3
@@ -177,15 +189,15 @@ if ($('.popprods-w').length) {
         slidesToShow: 2
       }
     },
-     {
+    {
       breakpoint: 481,
       settings: {
         slidesToShow: 1
       }
     },
     ]
- });
-}
+  });
+  }
 
 
 

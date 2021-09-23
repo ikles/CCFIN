@@ -460,6 +460,9 @@
   .prod-r-gal-row {   
             flex-wrap: wrap; 
   }
+  .fast {
+    display: flex;
+  }
 }
 
 
@@ -905,6 +908,13 @@ a.link {
 .vid-a {
   height: 270px;
 }
+.fast {
+  font-size: 12px;
+  span {
+    display: inline-block;
+    padding-right: 50px;
+  }
+}
 } 
 
 
@@ -1284,6 +1294,9 @@ p {
 .prod-gal-b-span {
   right: 10px;
   top: 10px;
+}
+.modal-overlay .modal-form__block {
+  padding: 20px;
 }
 }
 

@@ -401,11 +401,37 @@ input[type="text"].mnurow-input {
   margin-top: 10px;
   margin-bottom: 24px;
   position: relative;
+  &:hover {
+    text-decoration: none;
+    .fast {
+      display: flex;
+    }
+  }
   img {
     object-fit: cover;
     width: 100%;
     height: 100%;
   }
+}
+
+.fast {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  height: 60px;
+  z-index: 10;  
+  font-size: 16px;
+  display: flex;  
+          align-items: center;
+  background: url("../img/search.png") $nr right 15px center;  
+                background-size: 20px;
+  background-color: rgba(#FFF, 0.7);
+  padding: 0 15px;
+  font-size: 17px;
+  text-decoration: none;
+  color: #000;  
+  display: none;
 }
 
 .prod-teaser-item__price {
@@ -1901,6 +1927,52 @@ input[type="text"].catfilter-input {
     margin-top: 51px;
   }
 }
+
+
+
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  z-index: 13;    
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+.modal-form__layout {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 40px;
+}
+
+.modal-overlay .modal-form__block {
+  position: absolute;
+  top: 5%;
+  margin-bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  z-index: 6;   
+  width: calc(100% - 30px);
+  background: #FFF;
+  max-width: 1410px;
+  height: auto;
+  padding: 40px;    
+}
+
+.pop-close {
+  right: 15px;
+  top: 15px;
+  background: url("../img/close.svg") $nr center;  
+          background-size: cover;
+          cursor: pointer;
+}
+
 
 @import "_media.scss";
 @import "_hides.scss";

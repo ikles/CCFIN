@@ -1199,6 +1199,7 @@ input[type="text"].feedback__input {
       &:hover {
         font-weight: 500;
         border-bottom: 1px solid #000;
+        text-decoration: none;
       }
     }
   }
@@ -1758,7 +1759,8 @@ input[type="text"].catfilter-input {
 }
 
 .prod-gal-row {
-  display: flex;  
+  display: flex;
+  position: relative;  
 }
 
 .prod-gal-downl {
@@ -1769,6 +1771,7 @@ input[type="text"].catfilter-input {
   color: rgb(102, 102, 102);
   align-items: center;
   margin-right: 77px;
+  min-height: 49px;  
 }
 
 .prod-gal-downl-span {

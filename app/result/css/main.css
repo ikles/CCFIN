@@ -2016,7 +2016,8 @@ input[type="text"].feedback__input {
       border-bottom: 1px solid #000; }
     .pcats-ul li a:hover {
       font-weight: 500;
-      border-bottom: 1px solid #000; }
+      border-bottom: 1px solid #000;
+      text-decoration: none; }
 
 .pcats-r {
   -webkit-flex-grow: 1;
@@ -2529,7 +2530,8 @@ input[type="text"].catfilter-input {
 .prod-gal-row {
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  position: relative; }
 
 .prod-gal-downl {
   display: -webkit-inline-flex;
@@ -2542,7 +2544,8 @@ input[type="text"].catfilter-input {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 77px; }
+  margin-right: 77px;
+  min-height: 49px; }
 
 .prod-gal-downl-span {
   background-image: url("../img/downl_1.png");
